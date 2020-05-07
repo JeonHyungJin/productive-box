@@ -67,7 +67,7 @@ interface IRepo {
 			(edge) => {
 				const committedDate = edge?.node?.committedDate;
 				const timeString = new Date(committedDate).toLocaleTimeString(
-					[process.env.LOCALE, "ko-KR"],
+					[process.env.LOCALE, "en-US"],
 					{ hour12: false }
 				);
 				const hour = +timeString.split(":")[0];
